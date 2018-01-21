@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>video Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/bxslider">
+    <link type="text/css" rel="stylesheet" href="css/media.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+
+    <script src="https://use.fontawesome.com/57b7a5bda9.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <style>
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--HEADER-->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img alt="Brand" src="images/birthplacelogo.png" class="pull-left"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html"><em>HOME</em></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria- expanded="false">ABOUT US<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mission.html">Mission & Vission</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="our-foundation.html">Our Foundation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="join-today.html"><em><i class="fa fa-sign-out" aria-hidden="true"></i>JOIN TODAY</em></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria- expanded="false">LOGIN<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="margin-left: -200px;">
+                            <li>
+                                <a href="#">
+                                    <form action="/action_page.php">
+                                        <div class="form-group">
+                                            <label for="email">Email address:</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Password:</label>
+                                            <input type="password" class="form-control" id="pwd">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Remember me</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>.black-watch-or-campbell-tartan { background-image: url(data:image/png;base64,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); }
+                                    </form>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--END-OF-HEADER-->
+    <div class="videos">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <video width="400" controls>
+               <source src="https://www.youtube.com/watch?v=yfustlCbvvQ">
+               </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

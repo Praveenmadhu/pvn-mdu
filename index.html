@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+
+	<head>
+		<title>BIRTH PLACE</title>
+		<meta charset="utf-8">      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="css/style.css"> 
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/bxslider">
+        <link type="text/css" rel="stylesheet" href="css/media.css">
+        <link type="text/css" rel="stylesheet" href="css/animate.css">
+             
+        <script src="https://use.fontawesome.com/57b7a5bda9.js"></script>    
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bxslider.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+       
+        
+        <script src="js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+        
+         <script>
+         $(document).ready(function(){
+         $('.slider').bxSlider({
+         mode: 'fade',
+         captions: true});
+         });
+             
+         $('.collapse').collapse()
+             
+        $(function() {
+         var top = $('#menu,#sidecontent').offset().top - parseFloat($('#menu,#sidecontent').css('marginTop').replace(/auto/, 0));
+         var footTop = $('#footer').offset().top - parseFloat($('#footer').css('marginTop').replace(/auto/, 0));
+
+         var maxY = footTop - $('#menu,#sidecontent').outerHeight();
+
+        $(window).scroll(function(evt) {
+         var y = $(this).scrollTop();
+         if (y > top) {
+         if (y < maxY) {
+        $('#menu,#sidecontent').addClass('fixed').removeAttr('style');
+        } else {
+        $('#menu,#sidecontent').removeClass('fixed').css({
+        position: 'absolute',
+        top: (maxY - top) + 'px'
+        });
+        }
+        } else {
+       $('#menu,#sidecontent').removeClass('fixed');
+       }
+       });
+       });
+
+// Back to top button
+       (function() {
+       $(document).ready(function() {
+       return $(window).scroll(function() {
+       return $(window).scrollTop() > 200 ? $("#back-to-top").addClass("show") : $("#back-to-top").removeClass("show")
+       }), $("#back-to-top").click(function() {
+       return $("html,body").animate({
+       scrollTop: "0"
+       })
+       })
+       })
+       }).call(this);
+        
+         </script>
+        
+ 
+    </head>
+    
+    <body>
+    
+<!--HEADER-->
+           
+    <nav class="navbar navbar-default navbar-fixed-top">
+       <div class="container-fluid">
+       <div class="navbar-header">
+       <a class="navbar-brand" href="#"><img alt="Brand" src="images/birthplacelogo.png" class="pull-left"></a>
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html"><em>HOME</em></a></li>
+              <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-   expanded="false">ABOUT US<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                   <li><a href="mission.html">Mission & Vission</a></li>
+                   <li><a href="contact-us.html">Contact Us</a></li>
+                   <li><a href="our-foundation.html">Our Foundation</a></li>
+                   </ul>
+              </li>
+              <li><a href="join-today.html"><em><i class="fa fa-sign-out" aria-hidden="true"></i>JOIN TODAY</em></a></li>
+              <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-   expanded="false">LOGIN<span class="caret"></span></a>
+                   <ul class="dropdown-menu" style="margin-left: -200px;">
+                   <li><a href="#"><form action="/action_page.php">
+                       <div class="form-group">
+                       <label for="email">Email address:</label>
+                       <input type="email" class="form-control" id="email">
+                       </div>
+                       <div class="form-group">
+                       <label for="pwd">Password:</label>
+                       <input type="password" class="form-control" id="pwd">
+                       </div>
+                       <div class="checkbox">
+                      <label><input type="checkbox"> Remember me</label>
+                       </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                      </form></a>
+                  </li>
+                   </ul>
+              </li>
+            </ul>
+
+      </div>
+      </div>
+        </nav>
+               
+
+<!--END-OF-HEADER-->
+   
+<!--BANNER/SLIDER-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <img src="images/banner1.jpg" alt="banner">
+    </div>
+
+    <div class="item">
+    <img src="images/banner2.jpg" alt="banner">
+    </div>
+
+    <div class="item">
+    <img src="images/banner3.jpg" alt="banner">
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--END-OF-BANNER/SLIDER--> 
+  
+  
+<!--MAIN-CONTENT-->
+          <div class="container-fluid">
+          <div class="row">
+ <!--ROW1-->
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 35px;">
+           <blockquote style="margin-left: 5px; margin-right: 17px;" class="wow rotateInUpLeft">
+           <div class="blockquote-background ">
+           <i class="fa fa-quote-left pull-left" aria-hidden="true"></i> 
+           <p class="text-center">A baby is something you carry inside you for nine months, in your arms for three years, and in your heart until the day you die.</p>
+           <i class="fa fa-quote-right pull-right" style="margin-top: -25px;" aria-hidden="true"></i>
+           </div>
+           </blockquote>
+           
+           <div class="boxes clearfix">
+           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
+           <div class="diet clearfix">
+             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                 <img src="images/diet.png" class="img-responsive wow fadeInRight">  
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
+            <h3 class="text-left ">A Pregnant Woman's Daily Diet</h3>
+            <p class="text-left text-justify">At no other time in life is nutrition as important as before, during, and following       pregnancy. On the other hand, women can still eat foods that come in a box or a bag, eat out several times a week, or order pizza to go as long as they also follow a few simple eating-for-two dietary guidelines.</p>
+            <br>
+            <br>
+            <h4 class="text-left">A Pregnant Woman Should Include in Her Daily Diet at Least:</h4>   
+            <p class="text-left text-justify"><i class="fa fa-hand-o-right" style="color: white; font-size: 20px;" aria-hidden="true"></i>	Five servings of fresh fruits and vegetables (including at least one serving of a dark orange vegetable,    two servings of dark green leafy vegetables, and one serving of citrus fruit</p>
+               
+            <p class="text-left text-justify"><i class="fa fa-hand-o-right" style="color: white; font-size: 20px;" aria-hidden="true"></i>	Six servings of enriched, whole-grain breads and cereals. Three servings of nonfat or low-fat milk or milk products</p>
+            
+            <p class="text-left text-justify"><i class="fa fa-hand-o-right" style="color: white; font-size: 20px;" aria-hidden="true"></i>	Two to three servings of extra-lean meats, chicken without the skin, fish, or cooked dried beans and peas</p>
+            
+            <p class="text-left text-justify"><i class="fa fa-hand-o-right" style="color: white; font-size: 20px;" aria-hidden="true"></i>	Eight glasses of water</p>
+            
+           <button type="button" class="btn btn-info" style="background-color: #ffc731">learn more Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+             </div>
+
+           </div>   
+           </div>
+           
+           
+           
+           
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <div class="yoga-tips">
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img src="images/yoga.png" class="img-responsive wow fadeInUp">
+           </div>
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
+            <h2>Top 8 yoga postures for pregnant women</h2>
+            <h3 class="text-left">Yoga:</h3>
+            <p class="text-left text-justify"> It is this ancient form of exercise that has contributed in the holistic living of individuals in the    most natural and trusted way since years. Yoga is like a spiritual route to a relaxed mind and healthy body.In times of pregnancy, when women are battling mood swings at varying levels, fatigue and sickness, painful leg cramps and breathing problems; yoga exercises, techniques and postures ease all such conditions ensuring a period of relieved nine months followed by an easier labour and smooth delivery.</p> 
+           <button type="button" class="btn btn-info" style="background-color: #ffc731">learn more Info <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+           </div>
+
+           </div>
+           </div>
+           </div>
+                 
+                 
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+           <div class="sidebox clearfix">
+           <div class="healthy-tips clearfix text-justify wow fadeInRight">
+              <h2>UPTO DATE TIPS</h2>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Eat five or six well-balanced meals each day.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Take a prenatal vitamin each day as directed by your obstetrician or midwife.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Drink plenty of fluids -- at least eight to 10 glasses a day -- avoiding caffeine and artificial coloring.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Don't drink alcohol.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Don't smoke or allow yourself to be exposed to secondhand smoke.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Exercise -- it's important for your general health and also can help reduce stress. Take a pregnancy exercise class or walk at least fifteen to twenty minutes every day at a moderate pace. Walk in cool, shaded areas or indoors in order to prevent overheating.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Get adequate sleep -- at least eight hours a night. If you're suffering from sleep disturbances, take naps during the day and see your physician for advice.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Wear comfortable, nonrestricting shoes and put your feet up several times a day to prevent fatigue and swelling of the feet, legs, and ankles.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Continue to wear a safety belt while riding in motor vehicles. According to the National Highway Traffic Safety Administration, the shoulder portion of the restraint should be positioned over the collar bone. The lap portion should be placed under the abdomen as low as possible on the hips and across the upper thighs, never above the abdomen. Also, pregnant women should sit as far from the air bag as possible.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Don't take over-the-counter medications or herbal remedies without first consulting your obstetrician or midwife.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> In the third trimester , sleep on your left side to allow for the best blood flow to the fetus and to your uterus and kidneys. Avoid lying flat on your back for a long period of time.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> Drink lots of fluids during the day, but cut down before bedtime.</p>
+            <p><i class="fa fa-arrow-circle-right" style="color: red; font-size: 25px;" aria-hidden="true"></i> To prevent heartburn, do not eat large amounts of spicy, acidic (such as tomato products), or fried foods. If heartburn is a problem, sleep with your head elevated on pillows.</p>
+           
+           
+           </div>           
+           </div>
+           </div>
+</div><!--end-of-boxes-->
+           
+           
+          <div class= "container-fluid">
+          <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-left: 16px; padding-left: 0px; padding-right: 0px;">
+          <div class="food wow rotateInDownRight">
+              <h2 class="text-center">MONTH WISE PRECAUTION</h2>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="box3">
+              <h3>1st Termister</h3>
+              <img src="images/1st%20termister.jpg" class="img-responsive"><br>
+              <button type="button" class="btn btn-info" style="background-color: #ffc731" >know more <i class="fa fa-arrow-  circle-right" aria-hidden="true"></i></button>
+              </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="box4">
+              <h3>2st Termister</h3> 
+              <img src="images/2nd%20termister.jpg" class="img-responsive"><br>
+              <button type="button" class="btn btn-info" style="background-color: #ffc731">know more <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="box5">
+              <h3>3st Termister</h3>  
+              <img src="images/3rd%20termister.jpg" class="img-responsive"><br>
+              <button type="button" class="btn btn-info" style="background-color: #ffc731" >know more <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+              </div>  
+           </div><!--food-->
+           </div>
+           </div><!--row-->
+           </div><!--container-fluid-->
+           
+           
+           
+           
+           <div class="container-fluid">
+           <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 50px;">
+           <div class="docs">   
+                <h2>Suggestions from Doctors</h2>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="doctor1"><img src="images/doctors.png" class="wow zoomInDown"></div>
+                <p class="text-left text-justify"><i class="fa fa-arrow-circle-right" style="font-size: 15px; color: yellow;" aria-hidden="true"></i>  Frequent visits with your health care provider allow you to follow the progress of your baby's development. Visits also give you the opportunity to ask questions. Also, most health care providers welcome your partner at each visit, as well as interested family members. </p>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="doctor2"><img src="images/doctors.png" class="wow zoomInDown"></div>
+                <p class="text-left text-justify"><i class="fa fa-arrow-circle-right" style="font-size: 15px; color: yellow;" aria-hidden="true"></i>  Regular appointments with your health care provider throughout your pregnancy are important to ensure the health of you and your baby. In addition to medical care, prenatal care includes education on pregnancy and childbirth, plus counseling and support.</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="doctor3"><img src="images/doctors.png" class="wow zoomInDown"></div>
+                <p class="text-left text-justify"><i class="fa fa-arrow-circle-right" style="font-size: 15px; color: yellow;" aria-hidden="true"></i>  Frequent visits with your health care provider allow you to follow the progress of your baby's development. Visits also give you the opportunity to ask questions. Also, most health care providers welcome your partner at each visit, as well as interested family members.</p>
+                </div> 
+           </div>
+           </div>
+           </div>
+           </div>
+           
+           
+           
+           </div>                         
+           </div><!--end-of-row-->
+           </div><!--end-of-container-fluid->
+<!--END-OF-MAIN-CONTENT--> 
+                                    
+                                          
+           <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #ecc66b; margin-top: -25px;">
+             <div class="topfooter">              
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="part">
+                <div class="footer1 pull-left">  
+                <img src="images/logoblack.png">
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="part">
+                <div class="address">
+                <h4>ADDRESS:</h4>
+                <li style="list-style: none">H.NO:1-64</li>
+                <li style="list-style: none">WEST GANDHI NAGAR</li>
+                <li style="list-style: none">NERA ST ANNS SCHOOL</li>
+                <li style="list-style: none">DELHI</li>
+                <li style="list-style: none">PIN CODE:0000001</li>
+                </div>
+                </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="part">
+                  <div class="footericons pull-right">
+                   <h3>follow us on:</h3>
+                   <a href="https://www.facebook.com"><i class="fa fa-facebook" style="font-size: 45px; color: blue;" aria-hidden="true"></i></a> 
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter" style="font-size: 45px; color: cornflowerblue;" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin" style="font-size: 45px; color: darkblue;" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram" style="font-size: 45px; color: darkred;" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa fa-youtube" style="font-size: 45px; color: red;" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+             
+            
+<!--end-of--topfooter-->
+           
+           <footer style="margin-top: 0px; margin-bottom: 0px;">
+       
+               <p class="text-center" style="background-color: black; color: white; padding-top: 15px;">all rights reserved @praveen 2018</p>
+            
+           </footer>
+    
+         <div class='back-to-top' id='back-to-top' title='Back to top' style="color: white">Top</div>
+
+    </body>
